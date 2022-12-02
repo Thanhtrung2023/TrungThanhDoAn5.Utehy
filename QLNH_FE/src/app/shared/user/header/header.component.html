@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/assets/Content/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/assets/Content/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/Scripts/lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/Scripts/lib/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/Scripts/lib/select2/css/select2.min.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/Scripts/lib/jquery.bxslider/jquery.bxslider.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/Scripts/lib/owl.carousel/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/Scripts/lib/jquery-ui/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/Scripts/lib/fancyBox/source/jquery.fancybox.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/Content/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/Content/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/Content/css/green.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/Content/css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/Content/css/style_frm_dkdn.css" />
+    <link rel="stylesheet" href="/assets/Content/css/switcher.css">
+    <script type="text/javascript" src="/assets/Scripts/lib/jquery/jquery-1.11.2.min.js"></script>
+
+    <title>GymStore</title>
+    <link rel="stylesheet" href="/assets/Content/user/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="/assets/Content/user/css/elegant-icons.css" type="text/css">
+
+    <link rel="stylesheet" href="/assets/Content/user/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="/assets/Content/user/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="/assets/Content/user/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="/assets/Content/user/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="/assets/Content/user/css/style.css" type="text/css">
+    <script src="/assets/Content/user/main.js"></script>
+</head>
+<body class="green" >
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__left" style="margin-left:40px">
+                            <ul>
+                                <li><i class="fa fa-envelope"></i> thanhtrung2001@gmail.com</li>
+                                <li><i style="font-size: 16px;" class="fa fa-phone"></i>Call:1800 2067</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__right" style="margin-right:-80px;margin-top:5px">
+                            <div class="header__top__right__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-yahoo"></i></a>
+                            </div>
+                            <div class="header__top__right__language">
+                                <img src="/assets/Content/user/img/covietnam.jpg" alt="" style="width:32px;">
+                                <div>Việt Nam</div>
+                                <span class="arrow_carrot-down"></span>
+                                <ul>
+                                    <li><a href="#">Việt Nam</a></li>
+                                    <li><a href="#">English</a></li>
+                                </ul>
+                            </div>
+                            <div class="header__top__right__auth">
+                                <ul>
+                                <li><a title="SignIn" href="" data-toggle="modal" data-target="#myModal">Đăng nhập</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>    
+    <!-- end header -->
+    <!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+   <div class="demo_changer" id="demo_changer">
+        <div class="demo-icon fa fa-shopping-cart">
+            <span class="notify notify-left" id="count-cart"></span>
+        </div>
+        <div class="form_holder">
+            <div class="cart-block">
+                <div class="cart-block-content">
+                    <div class="cart-block-list">
+                        <div class="shop_cart">
+                            <table class="shop_table">
+                                <tbody id="show-cart">
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                    <div class="toal-cart">
+                        <span>Tổng Tiền</span>
+                        <span class="toal-price pull-right" id="total_price"></span>
+                    </div>
+                    <div class="cart-buttons">
+                        <a href="/GioHang/xemgiohang" class="btn-check-out">THANH TOÁN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!---->
+    <!-- POPUP LOGIN-REGISTER -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel" style="font-weight: bold">Đăng Nhập/Đăng Ký</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#Login" data-toggle="tab">Đăng Nhập</a></li>
+                                <li><a href="#Registration" data-toggle="tab">Đăng Ký</a></li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <!-- LOGIN -->
+                                <div class="tab-pane active" id="Login">
+                                    <form action="javascript:void()" name="dangnhap_from" class="form-horizontal"
+                                          id="dangnhap_from" method="post">
+                                        <div class="form-group">
+                                            <label for="email_login" class="col-sm-3 control-label">Email</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="email" class="input form-control" id="email_login"
+                                                       placeholder="Email...." />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pass_login" class="col-sm-3 control-label">Mật khẩu</label>
+
+                                            <div class="col-sm-9">
+                                                <input type="password" class="input form-control" id="pass_login"
+                                                       placeholder="Password...." />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <button class="button" type="submit" id="button-confirm">Đăng Nhập</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <!-- REGISTER -->
+                                <div class="tab-pane fade" id="Registration">
+                                    <form class="form-horizontal" name="dangkytk_form" action="#" method="post"
+                                          enctype="multipart/form-data" id="dangkytk_form register">
+                                        <div class="form-group">
+                                            <label for="frm_name" class="col-sm-4 control-label">Họ Tên</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" class="input form-control" id="frm_name" required />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="emailtk" class="col-sm-4 control-label">Email</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="email" class="input form-control" id="emailtk" required />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="pass_tk" class="col-sm-4 control-label">Mật khẩu</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="pass_tk" required />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="repass_tk" class="col-sm-4 control-label">Đặt lại mật khẩu</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="password" class="input form-control" id="repass_tk" required />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="ngaysinh_tk" class="col-sm-4 control-label">Ngày sinh</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="date" class="input form-control" id="ngaysinh_tk" required />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="gender_tk" class="col-sm-4 control-label">Giới tính</label>
+
+                                            <div class="col-sm-8">
+                                                <select class="input form-control" name="gioitinh" id="gender_tk">
+                                                    <option value="" checked>Tôi là...</option>
+                                                    <option value="1">Nữ</option>
+                                                    <option value="0">Nam</option>
+                                                    <option value="0">Khác</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="diachi" class="col-sm-4 control-label">Địa chỉ</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="diachi" class="input form-control" id="diachi_dk" />
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="dienthoai" class="col-sm-4 control-label">Số điện thoại</label>
+
+                                            <div class="col-sm-8">
+                                                <input type="text" name="dienthoai" class="input form-control"
+                                                       id="dienthoai_dk" />
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <button class="button" type="submit">Đăng ký</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div id="OR" class="hidden-xs">OR</div>
+                        </div>
+
+                        <!-- Facebook - Google account -->
+                        <div class="col-md-5">
+                            <div class="row text-center sign-with">
+                                <div class="social-header">Đăng nhập với</div>
+                                <div class="unit social-column">
+                                    <div class="social-inner">
+                                        <div>
+                                            <a href=""><img src="/assets/Content/images/fb-login-button-big.png" alt="login-facebook"></a>
+                                        </div>
+                                        <div>
+                                            <a href=""><img src="/assets/Content/images/gg-login-button-big.png" alt="login-google"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--EN LOGIN REGISTER-->
+
+    <a href="#" class="scroll_top" title="Scroll to Top" style="display: inline;">Scroll</a>
+    <!-- Script-->
+    <script type="text/javascript">
+        jQuery(document).ready($(function() {
+            Layout.init();
+            Layout.initOWL();
+            Layout.initTwitter();
+            Layout.initImageZoom();
+            Layout.initTouchspin();
+            Layout.initUniform();
+            Layout.initSliderRange();
+        }));
+    </script>
+
+
